@@ -1,0 +1,7 @@
+{
+  "seed": 12345,
+  "planet_profile": {
+    "map_width": 1024,
+    "map_height": 512
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "seed": 12345,
+  "star": {
+    "stellar_class": null,
+    "mass_solar": null,
+    "age_gyr": null,
+    "metallicity": null
+  },
+  "system": {
+    "planet_count": null,
+    "min_planets": 4,
+    "max_planets": 10
+  },
+  "planet_profile": {
+    "map_width": 1024,
+    "map_height": 512,
+    "min_map_width": 1024,
+    "min_map_height": 512
+  }
+}

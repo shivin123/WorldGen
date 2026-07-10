@@ -1,0 +1,21 @@
+{
+  "preferred_dem": {
+    "name": "NOAA ETOPO 2022 global relief model",
+    "source_url": "https://www.ncei.noaa.gov/products/etopo-global-relief-model",
+    "license": "CC0-1.0 according to NOAA/NCEI metadata",
+    "local_expected_file": "worldgen/data/earth_dem_etopo2022_2160x1080.npz",
+    "env_override": "WORLDGEN_EARTH_DEM_NPZ",
+    "status": "supported_external_reference_not_bundled_large_source"
+  },
+  "koppen_reference": {
+    "name": "Bundled kgcpy Köppen-Geiger raster",
+    "local_files": ["worldgen/data/kmz_int_reshape.png", "worldgen/data/kg_zoneNum.csv"],
+    "license": "BSD license via kgcpy package files",
+    "notes": "Used for simulated-vs-reference Köppen agreement diagnostics."
+  },
+  "fallback_dem": {
+    "name": "WorldGen compact offline fallback Earth relief grid",
+    "local_file": "worldgen/data/earth_terrain_4096x2048.npz",
+    "status": "artifact-repaired fallback, not a survey-grade DEM"
+  }
+}

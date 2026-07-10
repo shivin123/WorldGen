@@ -1,0 +1,11 @@
+# Normalize source/docs text across Windows and Linux
+* text=auto
+
+# Treat generated/reference binary data and images as binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.npz binary
+*.npy binary
+*.zip binary

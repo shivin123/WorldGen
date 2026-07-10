@@ -1,0 +1,62 @@
+# Python caches / build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments / local tooling
+.venv/
+venv/
+env/
+ENV/
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local secrets / machine-specific config
+.env
+.env.*
+*.local
+config/stage_overrides.json
+
+# Generated WorldGen runs and diagnostics
+output*/
+staged_web_run*/
+staged_update*/
+staged_*_test*/
+staged_*_smoke*/
+*_test/
+*_smoke/
+real_earth_*_test/
+real_earth_*/
+terrain_regions/
+regional_terrain/
+
+# Root-level generated diagnostics from local runs
+/diagnostics/
+/maps/
+/state/
+/error.txt
+/pipeline_status.csv
+/pipeline_status.json
+
+# Generated image/data outputs when accidentally copied to root
+main_planet_*.png
+system_orbits.png
+system_sizes.png
+worldgen_diagnostic_bundle.zip
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+docs/
