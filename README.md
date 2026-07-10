@@ -2,27 +2,6 @@
 
 WorldGen is a Python procedural world generator for building a physically informed single-star solar system and a detailed main-planet simulation. It currently includes staged generation for solar system setup, main planet selection, terrain/tectonics, hydrology, climate, biomes/Köppen classification, diagnostics, and a local web UI for map review.
 
-## Current focus
-
-The current development branch is moving toward a stable local release after a long terrain, climate, and UI review cycle. The latest accepted work includes:
-
-- `plate_history_v4` terrain mode with artifact cleanup passes.
-- Seasonal climate modes through `seasonal_v5` while keeping older modes available for comparison.
-- A local Web UI with run dashboards, map viewer, compare tools, map index, monthly controls, and diagnostic metadata.
-- A map registry/manifest system for generated, missing, hidden, deprecated, or not-applicable maps.
-
-Known open issues are tracked in:
-
-```text
- docs/WORLDGEN_PENDING_CHANGES_AND_ISSUES.md
-```
-
-Update notes are tracked in:
-
-```text
- docs/updates/
-```
-
 ## Requirements
 
 Python 3.12 is recommended.
@@ -74,24 +53,7 @@ plate_history_v4
 
 Earlier terrain modes are kept for comparison and rollback until cleanup is complete.
 
-## Preparing a clean GitHub snapshot
-
-Before uploading to GitHub, avoid committing generated runs, cache folders, and output images. This repository includes `.gitignore` and a helper script:
-
-```powershell
-python scripts/prepare_github_snapshot.py --source . --target ..\WorldGen_github_clean
-```
-
-Then initialize Git inside the clean snapshot folder, not inside a folder full of generated output.
-
-See the full guide:
-
-```text
- docs/GITHUB_UPLOAD_GUIDE.md
-```
-
 ## Project notes
 
-- Generated output folders can be very large and should not be committed.
+- Generated output folders can be very large.
 - Reference data under `worldgen/data/` is part of the source tree unless deliberately moved to external storage later.
-- The project is currently optimized for local research/development, not packaged distribution.
